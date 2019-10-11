@@ -1,3 +1,7 @@
-import bar from './bar';
+import bar, { defaultParameters, arrow } from './bar';
 
-bar()
+bar();
+
+defaultParameters(12);
+
+arrow();

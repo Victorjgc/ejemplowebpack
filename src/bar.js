@@ -1,9 +1,11 @@
 export default function bar() {
-	const text = document.createElement('h1');
-	text.innerHTML = 'Hello WORLD!!!!!';
-	document.body.appendChild(text);
+	console.log("hello");
+}
 
-	const btn = document.createElement('button');
-	btn.innerHTML = 'pulsa';
-	document.body.appendChild(btn);
+export function defaultParameters(height, color = '#FF0000') {
+	console.log('Default parameters', height, color);
+}
+
+export function arrow() {
+	console.log([1, 2, 3].map((n) => n + 1));
 }
