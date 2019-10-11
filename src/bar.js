@@ -1,4 +1,9 @@
 export default function bar() {
-	console.log("if you're reading this you're gonna die");
-	console.log("unless you....");
+	const text = document.createElement('h1');
+	text.innerHTML = 'Hello WORLD!!!!!';
+	document.body.appendChild(text);
+
+	const btn = document.createElement('button');
+	btn.innerHTML = 'pulsa';
+	document.body.appendChild(btn);
 }
