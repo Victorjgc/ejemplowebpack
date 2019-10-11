@@ -1,3 +1,4 @@
+require('../assets/style.css');
 import bar, { defaultParameters, arrow } from './bar';
 
 bar();

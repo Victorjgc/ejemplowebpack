@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-	
+
 	mode: 'development',
 	entry: './src/index.js',
 	output: {
@@ -19,9 +19,23 @@ module.exports = {
 						presets: ['@babel/preset-env']
 					}
 				}
-			 }
-			]
-		}
+			},
+			{
+				test: /\.css?$/,
+				use: [
+					'style-loader',
+					{
+						loader: 'postcss-loader',
+						options: {
+							ident: 'postcss',
+							plugins: [require('postcss-import')]
+						}
+					}
+				]
+			}
+
+		]
+	}
 
 };
 
